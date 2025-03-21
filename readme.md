@@ -21,7 +21,7 @@ Antes de instalar y ejecutar la aplicación, asegúrate de tener instalados los 
 Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/order-management.git
+git clone https://github.com/vizardkill/order-management
 cd order-management
 ```
 
@@ -64,8 +64,8 @@ La API estará disponible en <http://localhost:8080>.
 
 - URL: `POST /orders`
 - Headers:
--- `Content-Type: application/json`
--- `Idempotency-Key: <unique-key>`
+  - `Content-Type: application/json`
+  - `Idempotency-Key: <unique-key>`
 - Body
 
 ```json
@@ -110,7 +110,7 @@ La API estará disponible en <http://localhost:8080>.
 
 - URL `GET /orders/{order_id}`
 - Headers:
--- `Content-Type: application/json`
+  - `Content-Type: application/json`
 - Respuesta exitosa:
 
 ```json
@@ -137,8 +137,8 @@ La API estará disponible en <http://localhost:8080>.
 
 - URL: `PUT /products/{product_id}/stock`
 - Headers:
--- `Content-Type: application/json`
--- `Idempotency-Key: <unique-key>`
+  - `Content-Type: application/json`
+  - `Idempotency-Key: <unique-key>`
 - Body:
 
 ```json
@@ -157,7 +157,7 @@ La API estará disponible en <http://localhost:8080>.
 
 - URL: `GET /products`
 - Headers:
--- `Content-Type: application/json`
+  - `Content-Type: application/json`
 - Respuesta exitosa:
 
 ```json
